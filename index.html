@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <title>4nniversary</title>
+  </head>
+  <body class="text-light">
+    <audio src="assets/audio/kamu_cuma_satu.mp3" id="music"></audio>
+    <!-- Header -->
+    <section class="header" id="headerId">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-caption">
+            <a onclick="document.getElementById('music').play(); "> <img src="assets/img/anniv-text/Happy-4nniversary.png" alt="" id="annivImg" /></a>
+          </div>
+          <div class="carousel-item active slide-1" data-bs-interval="5000" style="background-image: url(assets/img/carousel/1.jpg)"></div>
+          <div class="carousel-item slide-2" data-bs-interval="3000" style="background-image: url(assets/img/carousel/2.jpg)"></div>
+          <div class="carousel-item slide-3" data-bs-interval="2000" style="background-image: url(assets/img/carousel/3.jpg)"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Starter -->
+    <section id="starter" class="starter_container">
+      <div class="container my-5">
+        <div class="row justify-content-center px-3">
+          <div class="col-md-10 align-self-center">
+            <h1 class="fw-bold">TERIMA KASIH</h1>
+            <p>
+              Beh, 4 Tahun beh, 4 tahun terharu banget ga sih. 4x kita 18 Juni, Ga nyangka banget bakal bisa sejauh ini kita bisa ngelangkah,hampir setiap minggu selama 209 minggu kita selalu ketemu, tiap hari selama 1460 hari kita selalu
+              telponan, tiap jam selama 35,040 jam kita chattan. Tetep setia suka sama kamu dari smp, dari jaman aku pakai motor beat "si oren" sampe sekarang kita bisa nyetir mobil. Udah banyak banget proses yang kita lalui bareng -
+              bareng.
+            </p>
+            <p>
+              Dari awal ketemu waktu smp sempet pacaran walopun cuma sebulan (ini jelek banget sih) gegara ketauan mamamu, dan sejak itu aku jadi jarang ngomong sama kamu walopun masih mengagumi hehe. Dan pas banget waktu itu udh beberapa
+              hari aku ngestalkin ig mu, tiba - tiba banget kamu ngechat dong, apa gak panik tuh. first-date nonton The Ring berharap kamu takut dan biar aku keliatan keren, malah kebalik:) Terus akhirnya setelah sebulan kali ya akhirnya
+              ketembak juga kamu, ya engga romantis sih, mana kmu pas lagi capek hehe tapi yang penting diterima :* gak romantis gapapa kan yang penting awet + pas pacarannya yang romantis :p
+            </p>
+            <p>
+              Banyak banget susah seneng yang kita laluin huhu, pergi ke alam - alam, padahal dari yang dulunya ku males banget kalo pergi ke tempat gegituan gara - gara kamu aku jadi seneng, sampe bisnis kecil - kecil an bareng bela -
+              belain nyenggangin waktu buat nganterin pesenan ke customer, keliling - keliling buat cod an, dimarahin mulu sama kamu apalagi pas bikin produk waktu kamu pms salah dikit ngamokkk wkwk, tapi gapapa sih kmu mo marah mo senyum
+              tetep cantek sumpah, tpi tep ngeri wkwk.
+            </p>
+            <p>
+              Makasih banget ya beh, udh mau nemenin aku berproses selama 4 tahun ini, udah banyak banget pelajaran, pengalaman, dan hal - hal baru yang aku dapetin sama kamu. Makasih buat semua support, marahmu, yang bikin berkembang gt.
+              Maaf kalo selama 4 tahun ini aku banyak salahnya, namanya berproses ya banyak salahnya ya ga si. Masih ga nyangka sih bisa selama ini kita sama - sama, semoga kedepannya, bertahun - tahun berikutnya, kita bisa berproses bareng
+              - bareng lagi ya, ningkatin kualitas diri bareng - bareng. Yok stop ovethingking mari doing something (maksa bat tpi yowes lah mwah).
+            </p>
+            <p>Pokoknya love u banget to the moon and back to the moon again back again, when naif said "Denganmu aku bahagia Denganmu semua ceria Janganlah kau berpaling dariku Karena kamu cuma satu Untukku"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery_container" id="gallery">
+      <video autoplay muted loop id="myVideo">
+        <source src="assets/video/background.mp4" type="video/mp4" />
+      </video>
+      <!-- Images used to open the lightbox -->
+      <div class="container">
+        <div class="row">
+          <div class="column col-md-4 mt-3">
+            <img src="assets/img/gallery/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" />
+          </div>
+          <div class="column col-md-4 mt-3">
+            <img src="assets/img/gallery/3-thumb.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow" />
+          </div>
+          <div class="column col-md-4 mt-3">
+            <img src="assets/img/gallery/6-thumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" />
+          </div>
+          <div class="column col-md-4 mt-3">
+            <img src="assets/img/gallery/2.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" />
+          </div>
+          <div class="column col-md-4 mt-3">
+            <img src="assets/img/gallery/5-thumb.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" />
+          </div>
+          <div class="column col-md-4 mt-3">
+            <img src="assets/img/gallery/4-thumb.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" />
+          </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <img src="assets/img/gallery/1.jpg" />
+            </div>
+
+            <div class="mySlides">
+              <img src="assets/img/gallery/3.jpeg" />
+            </div>
+
+            <div class="mySlides">
+              <img src="assets/img/gallery/6.jpg" />
+            </div>
+
+            <div class="mySlides">
+              <img src="assets/img/gallery/2.jpg" />
+            </div>
+            <div class="mySlides">
+              <img src="assets/img/gallery/5.jpg" />
+            </div>
+            <div class="mySlides">
+              <img src="assets/img/gallery/4.jpg" />
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Do You Love Me? -->
+    <section class="love_container" id="love">
+      <div class="container">
+        <div class="row">
+          <div class="col-md text-center">
+            <a type="button" class="btn btn-outline-light fs-3 px-4 fw-bold" id="button-love">Press Me!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer_container" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center fw-light py-5">
+            <h3>Made with <i class="bi bi-heart-fill text-danger"></i> by your beh</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- My JS -->
+    <!-- JQuery & My JS-->
+    <script src="assets/js/jquery-3.6.0.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#button-love").click(function () {
+          let love = confirm("Do you love me?");
+          if (love) {
+            alert("LOVE U TOO <3 !");
+          } else {
+            var no = confirm("Are you sure?");
+            if (no) {
+              while (no) {
+                no = confirm("Are you sure?");
+              }
+              alert("LOVE U TOO <3 !");
+            } else {
+              alert("LOVE U TOO <3 !");
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
