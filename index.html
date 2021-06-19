@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
     <title>4nniversary</title>
-    
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
   </head>
   <body class="text-light">
@@ -27,8 +26,8 @@
           <div class="carousel-caption">
             <a onclick="document.getElementById('music').play(); "> <img src="assets/img/anniv-text/Happy-4nniversary.png" alt="" id="annivImg" /></a>
           </div>
-          <div class="carousel-item active slide-1" data-bs-interval="3000" style="background-image: url(assets/img/carousel/1.jpg)"></div>
-          <div class="carousel-item slide-2" data-bs-interval="2000" style="background-image: url(assets/img/carousel/2.jpg)"></div>
+          <div class="carousel-item active slide-1" data-bs-interval="5000" style="background-image: url(assets/img/carousel/1.jpg)"></div>
+          <div class="carousel-item slide-2" data-bs-interval="3000" style="background-image: url(assets/img/carousel/2.jpg)"></div>
           <div class="carousel-item slide-3" data-bs-interval="2000" style="background-image: url(assets/img/carousel/3.jpg)"></div>
         </div>
       </div>
@@ -39,7 +38,7 @@
       <div class="container my-5">
         <div class="row justify-content-center px-3">
           <div class="col-md-10 align-self-center">
-            <h1 class="fw-bold">TERIMA KASIH</h1>
+            <h1 class="fw-bold message-title">TERIMA KASIH</h1>
             <p>
               Beh, 4 Tahun beh, 4 tahun terharu banget ga sih. 4x kita 18 Juni, Ga nyangka banget bakal bisa sejauh ini kita bisa ngelangkah,hampir setiap minggu selama 209 minggu kita selalu ketemu, tiap hari selama 1460 hari kita selalu
               telponan, tiap jam selama 35,040 jam kita chattan. Tetep setia suka sama kamu dari smp, dari jaman aku pakai motor beat "si oren" sampe sekarang kita bisa nyetir mobil. Udah banyak banget proses yang kita lalui bareng -
@@ -156,27 +155,39 @@
     <!-- My JS -->
     <!-- JQuery & My JS-->
     <script src="assets/js/jquery-3.6.0.js"></script>
-    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/Gallery.js"></script>
+
+    <script src="assets/js/PressMe.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script>
-      $(document).ready(function () {
-        $("#button-love").click(function () {
-          let love = confirm("Do you love me?");
-          if (love) {
-            alert("LOVE U TOO <3 !");
-          } else {
-            var no = confirm("Are you sure?");
-            if (no) {
-              while (no) {
-                no = confirm("Are you sure?");
-              }
-              alert("LOVE U TOO <3 !");
-            } else {
-              alert("LOVE U TOO <3 !");
-            }
-          }
-        });
+      /*===== SCROLL REVEAL =====*/
+      const sr = ScrollReveal({
+        origin: "bottom",
+        distance: "100px",
+        duration: 2000,
+        reset: true,
       });
+
+      // HEADER
+      sr.reveal(".carousel-caption", {});
+
+      //  MESSAGE
+      sr.reveal("h1", {});
+      sr.reveal("p", { interval: 400, delay: 200 });
+      // FOOTER
+      sr.reveal("h3", {});
+      // BUTTON
+      const srdefault = ScrollReveal({
+        origin: "bottom",
+        distance: "0px",
+      });
+
+      srdefault.reveal(".btn");
     </script>
   </body>
 </html>
+
