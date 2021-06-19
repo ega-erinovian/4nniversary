@@ -14,6 +14,12 @@
     <!-- Icon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- JQuery & My JS-->
+    <script src="assets/js/jquery-3.6.0.js"></script>
+
     <title>4nniversary</title>
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
   </head>
@@ -153,41 +159,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
     <!-- My JS -->
-    <!-- JQuery & My JS-->
-    <script src="assets/js/jquery-3.6.0.js"></script>
-
-    <script src="assets/js/Gallery.js"></script>
-
-    <script src="assets/js/PressMe.js"></script>
-
-    <!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script>
-      /*===== SCROLL REVEAL =====*/
-      const sr = ScrollReveal({
-        origin: "bottom",
-        distance: "100px",
-        duration: 2000,
-        reset: true,
-      });
-
-      // HEADER
-      sr.reveal(".carousel-caption", {});
-
-      //  MESSAGE
-      sr.reveal("h1", {});
-      sr.reveal("p", { interval: 400, delay: 200 });
-      // FOOTER
-      sr.reveal("h3", {});
-      // BUTTON
-      const srdefault = ScrollReveal({
-        origin: "bottom",
-        distance: "0px",
-      });
-
-      srdefault.reveal(".btn");
-    </script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
-
